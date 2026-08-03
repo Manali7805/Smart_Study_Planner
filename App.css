@@ -1,0 +1,2176 @@
+/* ===========================
+   AI Smart Study Planner Theme
+   Deep Navy + Indigo + Purple
+=========================== */
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Arial", sans-serif;
+}
+
+body {
+  background: #0F172A;
+  color: #F8FAFC;
+}
+
+
+/* Login Page Container */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0F172A;
+}
+
+
+/* Login Card */
+.login-box {
+  width: 400px;
+  padding: 40px;
+  background: #1E293B;
+  border-radius: 20px;
+  text-align: center;
+
+  box-shadow: 
+    0 0 25px rgba(99, 102, 241, 0.35);
+}
+
+
+/* Title */
+.login-box h1 {
+  color: #A855F7;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+
+/* Subtitle */
+.login-box p {
+  color: #CBD5E1;
+  margin-bottom: 25px;
+}
+
+
+/* Input Fields */
+.login-box input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+
+  background: #0F172A;
+  color: white;
+
+  border: 1px solid #334155;
+  border-radius: 10px;
+
+  outline: none;
+  font-size: 15px;
+}
+
+
+.login-box input:focus {
+  border-color: #6366F1;
+  box-shadow: 0 0 10px rgba(99,102,241,0.5);
+}
+
+
+/* Login Button */
+.login-box button {
+
+  width: 100%;
+  padding: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #6366F1,
+    #A855F7
+  );
+
+  color: white;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 17px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+
+.login-box button:hover {
+
+  transform: translateY(-3px);
+
+  box-shadow:
+  0 10px 20px rgba(168,85,247,0.4);
+}
+
+
+/* Links */
+.login-links {
+  margin-top: 20px;
+}
+
+
+.login-links a {
+  color: #3B82F6;
+  text-decoration: none;
+}
+
+
+.login-links a:hover {
+  color: #A855F7;
+}
+
+
+/* Responsive */
+@media(max-width:500px){
+
+  .login-box{
+    width:90%;
+    padding:30px;
+  }
+
+}
+
+/* ==========================
+   Dashboard Layout
+========================== */
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #0F172A;
+}
+
+
+/* ==========================
+   Sidebar
+========================== */
+
+.sidebar {
+
+  width: 260px;
+  background: #1E293B;
+
+  padding: 25px;
+
+  color: #F8FAFC;
+
+  box-shadow:
+  5px 0 20px rgba(0,0,0,0.3);
+
+}
+
+
+.logo {
+
+  font-size: 22px;
+  font-weight: bold;
+
+  color: #A855F7;
+
+  margin-bottom: 40px;
+
+}
+
+
+.sidebar ul {
+
+  list-style: none;
+
+}
+
+
+.sidebar li {
+
+  padding: 15px;
+
+  margin-bottom: 10px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  color: #CBD5E1;
+
+  transition: 0.3s;
+
+}
+
+
+.sidebar li:hover {
+
+  background: linear-gradient(
+    135deg,
+    #6366F1,
+    #A855F7
+  );
+
+  color: white;
+
+}
+
+
+
+/* ==========================
+   Main Dashboard Area
+========================== */
+
+.dashboard-main {
+
+  flex: 1;
+
+}
+
+
+/* ==========================
+   Navbar
+========================== */
+
+.navbar {
+
+  height: 70px;
+
+  background: #1E293B;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 0 30px;
+
+}
+
+
+.navbar-title {
+
+  color: #F8FAFC;
+
+  font-size: 22px;
+
+  font-weight: bold;
+
+}
+
+
+.navbar-right {
+
+  display: flex;
+
+  gap: 20px;
+
+  align-items: center;
+
+}
+
+
+.notification {
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+}
+
+
+.profile {
+
+  background: #6366F1;
+
+  padding: 10px 15px;
+
+  border-radius: 20px;
+
+}
+
+
+
+/* ==========================
+   Dashboard Content
+========================== */
+
+.dashboard-content {
+
+  padding: 40px;
+
+}
+
+
+.dashboard-content h1 {
+
+  color: #F8FAFC;
+
+  font-size: 32px;
+
+}
+
+
+.dashboard-content p {
+
+  margin-top: 10px;
+
+  color: #94A3B8;
+
+}
+
+/* ==========================
+   Dashboard Cards
+========================== */
+
+
+.cards-container {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+
+  margin-top: 35px;
+
+}
+
+
+
+/* Common Card Style */
+
+.study-card,
+.progress-card,
+.task-card {
+
+  background: #1E293B;
+
+  padding: 25px;
+
+  border-radius: 18px;
+
+  color: #F8FAFC;
+
+  border: 1px solid #334155;
+
+  transition: 0.3s;
+
+}
+
+
+
+/* Card Hover */
+
+.study-card:hover,
+.progress-card:hover,
+.task-card:hover {
+
+  transform: translateY(-8px);
+
+  border-color: #6366F1;
+
+  box-shadow:
+  0 10px 25px rgba(99,102,241,0.3);
+
+}
+
+
+
+/* Card Heading */
+
+.study-card h3,
+.progress-card h3,
+.task-card h3 {
+
+  color: #A855F7;
+
+  margin-bottom: 15px;
+
+}
+
+
+
+/* Card Number */
+
+.study-card h1,
+.progress-card h1 {
+
+  font-size: 40px;
+
+  color: #3B82F6;
+
+}
+
+
+
+/* Description */
+
+.study-card p,
+.progress-card p {
+
+  color: #94A3B8;
+
+  margin-top: 10px;
+
+}
+
+
+
+/* Task List */
+
+.task-card ul {
+
+  list-style: none;
+
+}
+
+
+.task-card li {
+
+  padding: 10px 0;
+
+  color: #CBD5E1;
+
+  border-bottom: 1px solid #334155;
+
+}
+
+
+/* Responsive */
+
+@media(max-width:900px){
+
+  .cards-container{
+
+    grid-template-columns:1fr;
+
+  }
+
+}
+
+/* ==========================
+   AI Recommendation Card
+========================== */
+
+.ai-card {
+
+  margin-top: 35px;
+
+  width: 50%;
+
+  background: #1E293B;
+
+  padding: 25px;
+
+  border-radius: 18px;
+
+  border: 1px solid #334155;
+
+  color: #F8FAFC;
+
+  box-shadow:
+  0 10px 25px rgba(99,102,241,0.15);
+
+  transition: 0.3s;
+
+}
+
+
+.ai-card:hover {
+
+  transform: translateY(-5px);
+
+  border-color: #A855F7;
+
+  box-shadow:
+  0 15px 30px rgba(168,85,247,0.3);
+
+}
+
+
+
+.ai-card h2 {
+
+  color: #A855F7;
+
+  margin-bottom: 15px;
+
+}
+
+
+
+.ai-card p {
+
+  color: #CBD5E1;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+.ai-card ul {
+
+  list-style: none;
+
+}
+
+
+
+.ai-card li {
+
+  background: #0F172A;
+
+  padding: 12px;
+
+  margin-bottom: 12px;
+
+  border-radius: 10px;
+
+  color: #E2E8F0;
+
+  border-left: 4px solid #6366F1;
+
+}
+
+/* ==========================
+   Study Schedule Card
+========================== */
+
+
+.schedule-card {
+
+  margin-top: 35px;
+
+  width: 70%;
+
+  background: #1E293B;
+
+  padding: 25px;
+
+  border-radius: 18px;
+
+  border: 1px solid #334155;
+
+  color: #F8FAFC;
+
+  box-shadow:
+  0 10px 25px rgba(99,102,241,0.15);
+
+  transition: 0.3s;
+
+}
+
+
+
+.schedule-card:hover {
+
+  transform: translateY(-5px);
+
+  border-color: #6366F1;
+
+  box-shadow:
+  0 15px 30px rgba(99,102,241,0.3);
+
+}
+
+
+
+.schedule-card h2 {
+
+  color: #A855F7;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+
+.schedule-item {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  background: #0F172A;
+
+  padding: 15px;
+
+  margin-bottom: 15px;
+
+  border-radius: 12px;
+
+  border-left: 4px solid #6366F1;
+
+}
+
+
+
+.schedule-item span:first-child {
+
+  color: #3B82F6;
+
+  font-weight: bold;
+
+}
+
+
+
+.schedule-item p {
+
+  color: #E2E8F0;
+
+  flex: 1;
+
+  margin-left: 20px;
+
+}
+
+
+
+
+/* Status Badges */
+
+
+.completed {
+
+  background: #22C55E;
+
+  color: white;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  font-size: 14px;
+
+}
+
+
+
+.pending {
+
+  background: #F59E0B;
+
+  color: white;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  font-size: 14px;
+
+}
+
+
+
+/* Mobile Responsive */
+
+@media(max-width:900px){
+
+  .schedule-card {
+
+    width:100%;
+
+  }
+
+
+  .schedule-item {
+
+    flex-direction:column;
+
+    gap:10px;
+
+    align-items:flex-start;
+
+  }
+
+}
+
+/* AI Recommendation + Schedule Layout */
+
+.ai-schedule-container {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 25px;
+
+  margin-top: 35px;
+
+}
+
+
+.ai-card,
+.schedule-card {
+
+  width: 100%;
+
+  margin-top: 0;
+
+}
+
+
+
+@media(max-width:1000px){
+
+  .ai-schedule-container {
+
+    grid-template-columns: 1fr;
+
+  }
+
+}
+
+/* ==========================
+   Study Streak Card
+========================== */
+
+
+.streak-card {
+
+  width:100%;
+
+  box-sizing:border-box;
+
+  background: linear-gradient(
+    135deg,
+    #1E293B,
+    #0F172A
+  );
+
+  padding:25px;
+
+  border-radius:20px;
+
+  border:1px solid #6366F1;
+
+  color:white;
+
+  text-align:center;
+
+  box-shadow:
+  0 10px 30px rgba(99,102,241,0.2);
+
+  transition:0.3s;
+
+}
+
+
+
+.streak-card:hover {
+
+  transform:translateY(-5px);
+
+  border-color:#A855F7;
+
+}
+
+
+
+.streak-card h2 {
+
+  color:#A855F7;
+
+}
+
+
+
+.streak-card h1 {
+
+  font-size:42px;
+
+  color:#3B82F6;
+
+  margin:15px;
+
+}
+
+
+
+.streak-card p {
+
+  color:#CBD5E1;
+
+}
+
+
+
+.badge {
+
+  display:inline-block;
+
+  margin-top:15px;
+
+  padding:10px 20px;
+
+  border-radius:25px;
+
+  background:#A855F7;
+
+  color:white;
+
+  font-weight:bold;
+
+}
+
+
+
+/* ==========================
+   Weekly Progress Card
+========================== */
+
+
+.weekly-card {
+
+
+  width:100%;
+
+  box-sizing:border-box;
+
+  background:#1E293B;
+
+  padding:25px;
+
+  border-radius:20px;
+
+  border:1px solid #334155;
+
+  color:white;
+
+}
+
+
+
+.weekly-card h2 {
+
+  color:#A855F7;
+
+  margin-bottom:25px;
+
+}
+
+
+
+.progress-row {
+
+  display:flex;
+
+  align-items:center;
+
+  gap:15px;
+
+  margin-bottom:18px;
+
+}
+
+
+
+.progress-row span:first-child {
+
+  width:90px;
+
+  color:#CBD5E1;
+
+}
+
+
+
+.progress-bar {
+
+  flex:1;
+
+  height:12px;
+
+  background:#0F172A;
+
+  border-radius:20px;
+
+  overflow:hidden;
+
+}
+
+
+
+.progress-fill {
+
+  height:100%;
+
+  background:linear-gradient(
+    90deg,
+    #6366F1,
+    #A855F7
+  );
+
+  border-radius:20px;
+
+}
+
+
+
+.progress-row span:last-child {
+
+  color:#3B82F6;
+
+  font-weight:bold;
+
+}
+
+.bottom-dashboard-container {
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:25px;
+
+  margin-top:35px;
+
+}
+
+
+@media(max-width:1000px){
+
+  .bottom-dashboard-container {
+
+    grid-template-columns:1fr;
+
+  }
+
+}
+
+/* ==========================
+   STUDY PLANNER PAGE
+========================== */
+
+.planner-page{
+
+    padding:40px;
+    background:#0F172A;
+    min-height:100vh;
+    color:white;
+
+}
+
+.planner-page h1{
+
+    color:#A855F7;
+    font-size:38px;
+    margin-bottom:10px;
+
+}
+
+.planner-page>p{
+
+    color:#CBD5E1;
+    margin-bottom:35px;
+
+}
+
+
+/* ==========================
+   Layout
+========================== */
+
+.planner-container{
+
+    display:grid;
+
+    grid-template-columns:380px 1fr;
+
+    gap:35px;
+
+    align-items:start;
+
+}
+
+
+/* ==========================
+   Form
+========================== */
+
+.planner-form{
+
+    background:#1E293B;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    border:1px solid #334155;
+
+    box-shadow:0 10px 30px rgba(99,102,241,.15);
+
+}
+
+.planner-form h2{
+
+    color:#A855F7;
+
+    margin-bottom:20px;
+
+}
+
+.planner-form input,
+.planner-form select{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-bottom:15px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:10px;
+
+    background:#0F172A;
+
+    color:white;
+
+    border:1px solid #334155;
+
+    font-size:15px;
+
+}
+
+.planner-form input:focus,
+.planner-form select:focus{
+
+    border-color:#6366F1;
+
+}
+
+.planner-form button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #6366F1,
+        #A855F7
+    );
+
+    transition:.3s;
+
+}
+
+.planner-form button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+/* ==========================
+   Task Section
+========================== */
+
+.task-section{
+
+    width:100%;
+
+}
+
+.task-section h2{
+
+    color:#A855F7;
+
+    margin-bottom:20px;
+
+}
+
+.empty-task{
+
+    background:#1E293B;
+
+    border:1px dashed #6366F1;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+}
+
+.empty-task h3{
+
+    color:white;
+
+    margin-bottom:10px;
+
+}
+
+.empty-task p{
+
+    color:#CBD5E1;
+
+}
+
+
+/* ==========================
+   Task Grid
+========================== */
+
+.task-list{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+
+/* ==========================
+   Task Card
+========================== */
+
+.planner-task{
+
+    background:#1E293B;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    border:1px solid #334155;
+
+    transition:.3s;
+
+}
+
+.planner-task:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#6366F1;
+
+}
+
+.planner-task h3{
+
+    color:#3B82F6;
+
+    margin-bottom:12px;
+
+}
+
+.planner-task p{
+
+    margin-bottom:10px;
+
+    color:#CBD5E1;
+
+}
+
+.planner-task span{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    background:#A855F7;
+
+    color:white;
+
+}
+
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:950px){
+
+    .planner-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+.complete-box{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  margin-top:15px;
+
+  color:#CBD5E1;
+
+  cursor:pointer;
+
+}
+
+
+.complete-box input{
+
+  width:18px;
+
+  height:18px;
+
+  cursor:pointer;
+
+}
+
+
+.planner-task:has(.complete-box input:checked){
+
+  border-color:#22C55E;
+
+}
+
+.delete-btn{
+
+  margin-top:15px;
+
+  padding:8px 18px;
+
+  border:none;
+
+  border-radius:20px;
+
+  background:#EF4444;
+
+  color:white;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  font-size:14px;
+
+  transition:0.3s;
+
+}
+
+
+.delete-btn:hover{
+
+  background:#DC2626;
+
+  transform:translateY(-3px);
+
+}
+
+.stats-card{
+
+  margin-bottom:35px;
+
+  background:#1E293B;
+
+  padding:25px;
+
+  border-radius:20px;
+
+  border:1px solid #334155;
+
+}
+
+
+.stats-card h2{
+
+  color:#A855F7;
+
+  margin-bottom:20px;
+
+}
+
+
+.stats-container{
+
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:20px;
+
+}
+
+
+.stats-container div{
+
+  background:#0F172A;
+
+  padding:20px;
+
+  border-radius:15px;
+
+  text-align:center;
+
+}
+
+
+.stats-container h3{
+
+  font-size:32px;
+
+  color:#3B82F6;
+
+}
+
+
+.stats-container p{
+
+  color:#CBD5E1;
+
+}
+
+
+.progress-bar{
+
+  margin-top:25px;
+
+  height:15px;
+
+  background:#0F172A;
+
+  border-radius:20px;
+
+  overflow:hidden;
+
+}
+
+
+.progress-fill{
+
+  height:100%;
+
+  background:linear-gradient(
+    90deg,
+    #6366F1,
+    #A855F7
+  );
+
+}
+
+/* ==========================
+   Notes Page
+========================== */
+
+
+.notes-page {
+
+  min-height:100vh;
+
+  background:#0F172A;
+
+  color:white;
+
+  padding:40px;
+
+}
+
+
+
+.notes-page h1 {
+
+  color:#A855F7;
+
+  font-size:40px;
+
+}
+
+
+
+.notes-page > p {
+
+  color:#CBD5E1;
+
+  margin-top:10px;
+
+}
+
+
+
+
+
+/* Notes Layout */
+
+
+.notes-container {
+
+  display:grid;
+
+  grid-template-columns:350px 1fr;
+
+  gap:30px;
+
+  margin-top:40px;
+
+  align-items:start;
+
+}
+
+
+
+
+
+/* Upload Card */
+
+
+.upload-note {
+
+
+  background:#1E293B;
+
+  padding:25px;
+
+  border-radius:20px;
+
+  border:1px solid #334155;
+
+  box-shadow:
+
+  0 10px 25px rgba(99,102,241,0.2);
+
+
+}
+
+
+
+.upload-note h2 {
+
+  color:#A855F7;
+
+  margin-bottom:20px;
+
+}
+
+
+
+
+.upload-note input {
+
+
+  width:100%;
+
+  padding:12px;
+
+  background:#0F172A;
+
+  color:white;
+
+  border:1px solid #334155;
+
+  border-radius:10px;
+
+}
+
+
+
+
+
+.upload-note button {
+
+
+  width:100%;
+
+  margin-top:20px;
+
+  padding:12px;
+
+
+  border:none;
+
+  border-radius:10px;
+
+
+  background:linear-gradient(
+
+    135deg,
+
+    #6366F1,
+
+    #A855F7
+
+  );
+
+
+  color:white;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+
+}
+
+
+
+
+
+.upload-note button:hover {
+
+  transform:translateY(-3px);
+
+}
+
+
+
+
+
+/* Notes List */
+
+
+/* ==========================
+   Notes List Section
+========================== */
+
+
+.notes-list {
+
+  background:#1E293B;
+
+  padding:25px;
+
+  border-radius:20px;
+
+  border:1px solid #334155;
+
+  display:grid;
+
+  grid-template-columns:repeat(2,1fr);
+
+  gap:20px;
+
+  max-height:350px;
+
+  overflow-y:auto;
+
+}
+
+
+
+
+
+/* Scrollbar */
+
+.notes-list::-webkit-scrollbar {
+
+  width:8px;
+
+}
+
+
+.notes-list::-webkit-scrollbar-track {
+
+  background:#0F172A;
+
+  border-radius:10px;
+
+}
+
+
+.notes-list::-webkit-scrollbar-thumb {
+
+  background:#6366F1;
+
+  border-radius:10px;
+
+}
+
+
+
+
+
+.notes-list h2 {
+
+  color:#A855F7;
+
+  margin-bottom:20px;
+
+  grid-column:1/-1;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   Note Card
+========================== */
+
+
+.note-card {
+
+  background:#0F172A;
+
+  padding:20px;
+
+  border-radius:15px;
+
+  border-left:4px solid #6366F1;
+
+  transition:0.3s;
+
+  display:flex;
+
+  flex-direction:column;
+
+}
+
+
+
+
+
+.note-card:hover {
+
+  transform:translateY(-5px);
+
+  border-color:#A855F7;
+
+}
+
+
+
+
+
+.note-card h3 {
+
+  color:#3B82F6;
+
+  margin-bottom:10px;
+
+}
+
+
+
+
+
+.note-card p {
+
+  color:#CBD5E1;
+
+  margin-top:10px;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   Buttons Layout
+========================== */
+
+
+.note-buttons {
+
+  display:flex;
+
+  gap:12px;
+
+  margin-top:20px;
+
+  align-items:center;
+
+}
+
+
+
+
+
+.note-card button {
+
+  padding:8px 16px;
+
+  border:none;
+
+  border-radius:20px;
+
+  color:white;
+
+  cursor:pointer;
+
+  font-weight:bold;
+
+  width:auto;
+
+  min-width:80px;
+
+  transition:0.3s;
+
+}
+
+
+
+
+
+
+/* Edit Button */
+
+.edit-btn {
+
+  background:#6366F1 !important;
+
+}
+
+
+
+.edit-btn:hover {
+
+  background:#4F46E5 !important;
+
+  transform:translateY(-2px);
+
+}
+
+
+
+
+
+
+
+/* Save Button */
+
+.save-btn {
+
+  background:#22C55E !important;
+
+}
+
+
+
+.save-btn:hover {
+
+  background:#16A34A !important;
+
+  transform:translateY(-2px);
+
+}
+
+
+
+
+
+
+
+/* Delete Button */
+
+.delete-btn {
+
+  background:#EF4444 !important;
+
+}
+
+
+
+.delete-btn:hover {
+
+  background:#DC2626 !important;
+
+  transform:translateY(-2px);
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+   Edit Input
+========================== */
+
+
+.edit-input {
+
+  width:100%;
+
+  padding:10px;
+
+  background:#0F172A;
+
+  color:white;
+
+  border:1px solid #6366F1;
+
+  border-radius:10px;
+
+  outline:none;
+
+}
+
+
+
+
+
+
+.edit-input:focus {
+
+  box-shadow:0 0 10px rgba(99,102,241,0.5);
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+   Empty State
+========================== */
+
+
+.empty-note {
+
+  background:#0F172A;
+
+  padding:25px;
+
+  border-radius:15px;
+
+  text-align:center;
+
+  grid-column:1/-1;
+
+}
+
+
+
+
+
+.empty-note h3 {
+
+  color:#A855F7;
+
+}
+
+
+
+
+
+.empty-note p {
+
+  color:#CBD5E1;
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+   Responsive
+========================== */
+
+
+@media(max-width:900px){
+
+
+  .notes-container{
+
+    grid-template-columns:1fr;
+
+  }
+
+
+
+  .notes-list{
+
+    grid-template-columns:1fr;
+
+  }
+
+
+
+  .note-buttons{
+
+    flex-direction:column;
+
+    align-items:stretch;
+
+  }
+
+
+
+  .note-card button{
+
+    width:100%;
+
+  }
+
+
+}
+
+/* ==========================
+   Search Notes
+========================== */
+
+
+.search-note {
+
+  grid-column:1/-1;
+
+  width:100%;
+
+  padding:12px;
+
+  background:#0F172A;
+
+  color:white;
+
+  border:1px solid #334155;
+
+  border-radius:12px;
+
+  outline:none;
+
+  font-size:15px;
+
+}
+
+
+
+.search-note:focus {
+
+  border-color:#6366F1;
+
+  box-shadow:0 0 10px rgba(99,102,241,0.5);
+
+}
+
+/* ================================
+   AI STUDY PLANNER - DEEP SPACE UI
+================================ */
+
+
+.planner-page {
+
+    background: #0F172A;
+    color: white;
+    min-height: 100vh;
+    padding: 30px;
+
+}
+
+
+
+/* AI Planner Cards */
+
+.stats-card,
+.task-section,
+.planner-form,
+.planner-task {
+
+    background: #1E293B;
+
+    color: white;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(99,102,241,0.3);
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.3);
+
+}
+
+
+
+/* Headings */
+
+.planner-page h1 {
+
+    color:#A855F7;
+
+}
+
+
+.planner-page h2 {
+
+    color:#3B82F6;
+
+}
+
+
+
+
+/* Inputs */
+
+
+.planner-page input,
+.planner-page select {
+
+
+    background:#0F172A;
+
+    color:white;
+
+    border:1px solid #6366F1;
+
+    padding:12px;
+
+    border-radius:10px;
+
+}
+
+
+
+
+.planner-page input::placeholder {
+
+    color:#94A3B8;
+
+}
+
+
+
+/* Buttons */
+
+
+.planner-page button {
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #6366F1,
+        #A855F7
+    );
+
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+
+}
+
+
+
+.planner-page button:hover {
+
+
+    transform:translateY(-2px);
+
+    box-shadow:
+
+    0 0 20px rgba(168,85,247,0.5);
+
+
+}
+
+
+
+
+/* AI Schedule Cards */
+
+
+.planner-task {
+
+
+    padding:20px;
+
+    margin:15px 0;
+
+    border-left:
+
+    5px solid #6366F1;
+
+
+}
+
+
+
+.planner-task h3 {
+
+
+    color:#A855F7;
+
+}
+
+
+
+.planner-task p {
+
+
+    color:#CBD5E1;
+
+}
+
+
+
+
+/* Progress Bar */
+
+
+.progress-bar {
+
+
+    background:#0F172A;
+
+
+}
+
+
+
+.progress-fill {
+
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #3B82F6,
+        #A855F7
+    );
+
+
+}

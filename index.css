@@ -1,0 +1,36 @@
+/* ===============================
+   AI Smart Study Planner Global CSS
+   Deep Navy + Indigo + Purple Theme
+================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: #0F172A;
+  color: #F8FAFC;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+button,
+input {
+  font-family: inherit;
+}
