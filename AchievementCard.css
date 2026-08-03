@@ -1,0 +1,60 @@
+.achievement-card{
+
+    background:#1E293B;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    border:1px solid #334155;
+
+}
+
+
+.achievement-card h2{
+
+    color:#FACC15;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.achievement-item{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    background:#0F172A;
+
+    padding:15px;
+
+    margin-top:12px;
+
+    border-radius:12px;
+
+}
+
+
+
+.achievement-item span{
+
+    font-size:25px;
+
+}
+
+
+
+.achievement-item p{
+
+    flex:1;
+
+    margin-left:15px;
+
+    color:#CBD5E1;
+
+}

@@ -1,0 +1,596 @@
+/* ==========================
+   AI Quiz Page
+========================== */
+
+
+.quiz-page {
+
+    min-height:100vh;
+
+    background:#0F172A;
+
+    color:white;
+
+    padding:40px;
+
+}
+
+
+
+.quiz-page h1 {
+
+    text-align:center;
+
+    color:#A855F7;
+
+    font-size:40px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.quiz-page > p {
+
+    text-align:center;
+
+    color:#CBD5E1;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+
+/* ==========================
+   Main Layout
+========================== */
+
+
+.quiz-container {
+
+
+    display:grid;
+
+    grid-template-columns:350px 1fr;
+
+    gap:30px;
+
+    max-width:1200px;
+
+    margin:40px auto;
+
+    align-items:start;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   Generator Box
+========================== */
+
+
+.quiz-generator {
+
+
+    background:#1E293B;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    border:1px solid #334155;
+
+    box-shadow:
+
+    0 10px 30px rgba(168,85,247,0.2);
+
+
+}
+
+
+
+
+.quiz-generator h2 {
+
+
+    color:#A855F7;
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+
+.quiz-generator input,
+.quiz-generator select {
+
+
+    width:100%;
+
+    padding:13px;
+
+    margin-bottom:15px;
+
+    background:#0F172A;
+
+    color:white;
+
+    border:1px solid #475569;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+}
+
+
+
+
+
+.quiz-generator input::placeholder {
+
+
+    color:#94A3B8;
+
+
+}
+
+
+
+
+.quiz-generator input:focus,
+.quiz-generator select:focus {
+
+
+    border-color:#A855F7;
+
+    outline:none;
+
+
+}
+
+
+
+
+
+
+
+.quiz-generator button {
+
+
+    width:100%;
+
+    padding:14px;
+
+
+    border:none;
+
+    border-radius:12px;
+
+
+    background:linear-gradient(
+
+        135deg,
+
+        #6366F1,
+
+        #A855F7
+
+    );
+
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+.quiz-generator button:hover {
+
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 5px 20px rgba(168,85,247,0.5);
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   Question Section
+========================== */
+
+
+.question-section {
+
+
+    background:#1E293B;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    border:1px solid #334155;
+
+    min-height:450px;
+
+
+}
+
+
+
+
+.question-section h2 {
+
+
+    color:#A855F7;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   Question Card
+========================== */
+
+
+.question-card {
+
+
+    background:#0F172A;
+
+    padding:25px;
+
+    border-radius:15px;
+
+
+    border-left:
+
+    5px solid #6366F1;
+
+
+}
+
+
+
+
+
+.question-card h3 {
+
+
+    color:#E2E8F0;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+/* ==========================
+   Options
+========================== */
+
+
+.question-card label {
+
+
+    display:block;
+
+
+    background:#1E293B;
+
+
+    padding:15px;
+
+
+    margin:12px 0;
+
+
+    border-radius:12px;
+
+
+    color:#CBD5E1;
+
+
+    cursor:pointer;
+
+
+    border:1px solid transparent;
+
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+.question-card label:hover {
+
+
+    background:#334155;
+
+    border-color:#6366F1;
+
+
+}
+
+
+
+
+.question-card input {
+
+
+    width:auto;
+
+    margin-right:12px;
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   Buttons
+========================== */
+
+
+.question-card button {
+
+
+    margin-top:20px;
+
+
+    padding:13px 25px;
+
+
+    border:none;
+
+
+    border-radius:20px;
+
+
+    background:#22C55E;
+
+
+    color:white;
+
+
+    font-weight:bold;
+
+
+    cursor:pointer;
+
+
+    transition:0.3s;
+
+
+}
+
+
+
+
+.question-card button:hover {
+
+
+    background:#16A34A;
+
+    transform:scale(1.03);
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+   Explanation Box
+========================== */
+
+
+.explanation-box {
+
+
+    margin-top:25px;
+
+
+    padding:20px;
+
+
+    background:#172554;
+
+
+    border-radius:15px;
+
+
+    border-left:5px solid #3B82F6;
+
+
+}
+
+
+
+.explanation-box h3 {
+
+
+    color:#60A5FA;
+
+
+}
+
+
+
+.explanation-box p {
+
+
+    color:#E2E8F0;
+
+    line-height:1.6;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   Result Section
+========================== */
+
+
+.question-card h2 {
+
+
+    color:#22C55E;
+
+    text-align:center;
+
+
+}
+
+
+
+.question-card h3 {
+
+
+    text-align:center;
+
+
+    font-size:22px;
+
+
+}
+
+
+
+
+
+.question-card p {
+
+
+    text-align:center;
+
+    color:#CBD5E1;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   Loading Effect
+========================== */
+
+
+button:disabled {
+
+
+    opacity:0.6;
+
+    cursor:not-allowed;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   Responsive
+========================== */
+
+
+@media(max-width:900px){
+
+
+    .quiz-page{
+
+
+        padding:20px;
+
+
+    }
+
+
+
+    .quiz-container{
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+    .quiz-page h1{
+
+
+        font-size:30px;
+
+
+    }
+
+
+}

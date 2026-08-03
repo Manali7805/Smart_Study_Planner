@@ -1,0 +1,460 @@
+/* ==========================
+   Progress Page
+========================== */
+
+
+.progress-page{
+
+    min-height:100vh;
+
+    background:#0F172A;
+
+    color:white;
+
+    padding:40px;
+
+}
+
+
+
+
+.progress-page h1{
+
+    color:#A855F7;
+
+    font-size:40px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.progress-page > p{
+
+    color:#CBD5E1;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   Summary Cards
+========================== */
+
+
+.progress-summary{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-top:35px;
+
+}
+
+
+
+
+
+.progress-card{
+
+
+    background:#1E293B;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    border:1px solid #334155;
+
+    transition:0.3s;
+
+
+}
+
+
+
+.progress-card:hover{
+
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(168,85,247,0.3);
+
+
+}
+
+
+
+
+
+.progress-card h2{
+
+
+    color:#22C55E;
+
+    font-size:35px;
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+.progress-card p{
+
+    color:#CBD5E1;
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   AI Recommendation
+========================== */
+
+
+.recommendation-card{
+
+
+    margin-top:35px;
+
+    background:#1E293B;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    border-left:5px solid #A855F7;
+
+    box-shadow:0 10px 25px rgba(168,85,247,0.2);
+
+
+}
+
+
+
+.recommendation-card h2{
+
+
+    color:#A855F7;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.recommendation-card p{
+
+
+    color:#CBD5E1;
+
+    font-size:17px;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   Topic Analysis
+========================== */
+
+
+.topic-analysis{
+
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+    margin-top:35px;
+
+
+}
+
+
+
+
+
+.analysis-box{
+
+
+    background:#1E293B;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    border:1px solid #334155;
+
+
+}
+
+
+
+.analysis-box h2{
+
+
+    color:#F59E0B;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.analysis-box p{
+
+
+    background:#0F172A;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    margin-top:10px;
+
+    color:#CBD5E1;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   Quiz History
+========================== */
+
+
+.subject-progress{
+
+
+    margin-top:40px;
+
+
+}
+
+
+
+.subject-progress h2{
+
+
+    color:#A855F7;
+
+
+}
+
+
+
+
+
+
+
+.subject-card{
+
+
+    background:#1E293B;
+
+    padding:25px;
+
+    margin-top:20px;
+
+    border-radius:20px;
+
+    border:1px solid #334155;
+
+    transition:0.3s;
+
+
+}
+
+
+
+.subject-card:hover{
+
+
+    transform:scale(1.02);
+
+
+}
+
+
+
+
+
+
+.subject-header{
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+
+}
+
+
+
+.subject-header h3{
+
+
+    color:#38BDF8;
+
+
+}
+
+
+
+.subject-header span{
+
+
+    color:#22C55E;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   Progress Bar
+========================== */
+
+
+.progress-bar{
+
+
+    height:12px;
+
+    background:#334155;
+
+    border-radius:20px;
+
+    margin-top:15px;
+
+    overflow:hidden;
+
+
+}
+
+
+
+.progress-fill{
+
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        #6366F1,
+
+        #A855F7
+
+    );
+
+    border-radius:20px;
+
+    transition:width 0.5s ease;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+   Responsive
+========================== */
+
+
+@media(max-width:900px){
+
+
+
+    .progress-summary{
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+
+    .topic-analysis{
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+
+    .progress-page{
+
+
+        padding:20px;
+
+
+    }
+
+
+
+    .progress-page h1{
+
+
+        font-size:30px;
+
+
+    }
+
+
+
+}

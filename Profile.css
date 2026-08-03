@@ -1,0 +1,165 @@
+.profile-page{
+
+    min-height:100vh;
+    background:#0F172A;
+    color:white;
+    padding:40px;
+
+}
+
+
+.profile-page h1{
+
+    color:#A855F7;
+    font-size:40px;
+
+}
+
+
+.profile-page > p{
+
+    color:#CBD5E1;
+
+}
+
+
+
+
+
+.profile-card{
+
+    margin-top:30px;
+    background:#1E293B;
+    padding:30px;
+    border-radius:20px;
+
+    display:flex;
+    gap:30px;
+    align-items:center;
+
+    border:1px solid #334155;
+
+}
+
+
+
+.profile-avatar{
+
+    font-size:80px;
+
+}
+
+
+
+
+.section-title{
+
+    margin-top:40px;
+    color:#A855F7;
+
+}
+
+
+
+
+.stats-container{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+
+}
+
+
+
+.stat-card{
+
+    background:#1E293B;
+    padding:25px;
+    text-align:center;
+    border-radius:20px;
+
+    border:1px solid #334155;
+
+}
+
+
+
+.stat-card h3{
+
+    color:#22C55E;
+    font-size:30px;
+
+}
+
+
+
+
+
+.achievement-container{
+
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+
+
+
+.achievement-card{
+
+    background:#1E293B;
+    padding:15px 25px;
+    border-radius:20px;
+
+    border:1px solid #334155;
+
+}
+
+
+
+
+
+.edit-btn{
+
+    margin-top:40px;
+
+    padding:14px 30px;
+
+    border:none;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        135deg,
+        #6366F1,
+        #A855F7
+    );
+
+    color:white;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+
+
+@media(max-width:900px){
+
+    .stats-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .profile-card{
+
+        flex-direction:column;
+
+    }
+
+}
