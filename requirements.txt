@@ -1,0 +1,11 @@
+Frontend
+React.js
+Vite
+JavaScript (ES6+)
+HTML5
+CSS3
+React Hooks (useState, useEffect)
+Local Storage API
+Backend
+Node.js
+Express.js
